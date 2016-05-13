@@ -218,7 +218,7 @@ Single slide style
 }
 .cd-hero-slider li:nth-of-type(2) {
   background-color: #3d4952;
-  background-image: url("../assets/slide-3.jpg");
+  background-image: url("../assets/slide-4.jpg");
 }
 .cd-hero-slider li:nth-of-type(3) {
   background-color: #586775;
@@ -316,7 +316,7 @@ Single slide style
   display: inline-block;
   padding: 1.2em 1.4em;
   margin-top: .8em;
-  background-color: rgba(75, 95, 163, 0.7);
+  background-color: rgba(75, 95, 163, 1);
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
