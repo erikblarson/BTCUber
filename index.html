@@ -5,16 +5,93 @@
   <title>Blackjack Strategy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale= 1">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
   <header>
     <div class="navbar-wrapper">
       <div class="header">
-        <div class="header-logo"></div>
+        <!-- <div class="header-logo"></div> -->
+        <section class="cd-hero">
+          <ul class="cd-hero-slider autoplay">
+            <li class="selected">
+              <div class="cd-full-width">
+                <h2>Hero slider</h2>
+                <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+              </div> <!-- .cd-full-width -->
+            </li>
+
+            <li>
+              <div class="cd-half-width">
+                <h2>Slide title here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+                <a href="#0" class="cd-btn">Start</a>
+                <a href="#0" class="cd-btn secondary">Learn More</a>
+              </div> <!-- .cd-half-width -->
+
+              <div class="cd-half-width cd-img-container">
+                <img src="assets/slide-1.jpg" alt="tech 1">
+              </div> <!-- .cd-half-width.cd-img-container -->
+            </li>
+
+            <li>
+              <div class="cd-half-width cd-img-container">
+                <img src="assets/slide-3.jpg" alt="tech 2">
+              </div> <!-- .cd-half-width.cd-img-container -->
+
+              <div class="cd-half-width">
+                <h2>Slide title here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+                <a href="#0" class="cd-btn">Start</a>
+                <a href="#0" class="cd-btn secondary">Learn More</a>
+              </div> <!-- .cd-half-width -->
+
+            </li>
+
+            <li class="cd-bg-video">
+              <div class="cd-full-width">
+                <h2>Slide title here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+                <a href="#0" class="cd-btn">Learn more</a>
+              </div> <!-- .cd-full-width -->
+
+              <div class="cd-bg-video-wrapper" data-video="assets/video/video">
+                <!-- video element will be loaded using jQuery -->
+              </div> <!-- .cd-bg-video-wrapper -->
+            </li>
+
+            <li>
+              <div class="cd-full-width">
+                <h2>Slide title here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+                <a href="#0" class="cd-btn">Start</a>
+                <a href="#0" class="cd-btn secondary">Learn More</a>
+              </div> <!-- .cd-full-width -->
+            </li>
+          </ul> <!-- .cd-hero-slider -->
+
+          <div class="cd-slider-nav">
+            <nav>
+              <span class="cd-marker item-1"></span>
+
+              <ul>
+                <li class="selected"><a href="#0">Intro</a></li>
+                <li><a href="#0">Tech 1</a></li>
+                <li><a href="#0">Tech 2</a></li>
+                <li><a href="#0">Video</a></li>
+                <li><a href="#0">Image</a></li>
+              </ul>
+            </nav>
+          </div> <!-- .cd-slider-nav -->
+        </section> <!-- .cd-hero -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
           <div class="navbar-header">
@@ -25,7 +102,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a id="brand-name" class="navbar-brand" href="#"><img src="img/seclogo.png" alt="Dispute Bills" class="img-responsive"></a>
+            <a id="brand-name" class="navbar-brand" href="#"><img src="img/logobtc3.png" alt="Dispute Bills" class="img-responsive"></a>
           </div>
 
             <!-- <div class="row"> -->
@@ -35,8 +112,8 @@
                     <li class="nav-item"><a href="#">Home</a></li>
                     <li class="nav-item "><a href="#">About</a></li>
                     <li class="nav-item"><a href="#">Contact</a></li>
-                    <li class="nav-item"><a href="#">Links</a></li>
-                    <li class="nav-item"><a href="#">Wanna Get</a></li>
+                    <li class="nav-item"><a href="#">Ride Times</a></li>
+                    <li class="nav-item"><a href="#">Survey</a></li>
                   </ul>
                 </div>
               </div>
@@ -46,11 +123,13 @@
       </div>
     </div>
 </div>
+
   </header>
+
   <div class="container">
     <div id="content-panel" class="row">
       <div class="col-xs-12 col-md-5 col-lg-5 col-md-push-7 side text-center">
-        <div id="inner-side" data-spy="affix" data-offset-top="165" data-offset-bottom="230" data-clampedwidth=".side">
+        <div id="inner-side" data-spy="affix" data-offset-top="680" data-offset-bottom="230" data-clampedwidth=".side">
           <div class="offer">
             <h2>OFFERS</h2>
             <h3>test</h3>
@@ -115,6 +194,8 @@
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/functions.js"></script>
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

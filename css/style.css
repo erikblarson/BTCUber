@@ -11,20 +11,22 @@ body {
     padding-bottom: 5%;
 }
 .header {
-    padding-top: 120px;
-    background: url(../img/mad.jpg) no-repeat ;
-    background-size:cover;
+    /*padding-top: 120px;*/
+    /*background: url(../img/mad.jpg) no-repeat ;
+    background-size:cover;*/
     /*background:#404e91;*/
     border-bottom:1px solid black;
-    height:500px;
+    /*height:500px;*/
+    height:81px;
+
 }
-.header-logo {
+/*.header-logo {
     margin-left: 22%;
     width: 1080px;
     height: 350px;
-    /*background: url(../img/btc.png) no-repeat;*/
+    background: url(../img/btc.png) no-repeat;
     background-size: 100% auto;
-}
+}*/
 .navbar {
     background-color: rgba(0, 0, 0, 0.65);
     -webkit-transition: all 0.6s ease-out;
@@ -50,7 +52,7 @@ body {
     text-align: center;
 }
 .navbar.scrolled .navbar-nav>li>a:hover {
-    color: #49ad68;
+    color: #4b5fa3;
 }
 .navbar li {
     text-align: center;
@@ -86,7 +88,7 @@ body {
         margin-left: 10%;
         width: 80%;
         text-align: center;
-        border-bottom: 1px solid #49ad68;
+        border-bottom: 1px solid #4b5fa3;
         border-left: none;
         border-right: none;
     }
@@ -109,7 +111,7 @@ body {
 /*---------------------- MAIN CONENTT AREA --------------------------*/
 
 #content-panel {
-    margin-top: 50px;
+    margin-top: 696px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -127,7 +129,7 @@ body {
 }
 .affix {
     margin-left: -15px;
-    top: 59px;
+    top: 96px;
     background: white;
 }
 .affix-top {
@@ -142,7 +144,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    border-bottom: 1px solid #49ad68;
+    border-bottom: 1px solid #4b5fa3;
     padding-bottom: 15px;
     margin-bottom: 30px;
 }
@@ -160,7 +162,7 @@ body {
 /*-------------------------- FOOTER -----------------------------*/
 
 .footer {
-    background: black;
+    background: #4b5fa3;
     height: 215px;
 }
 
