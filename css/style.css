@@ -11,22 +11,9 @@ body {
     padding-bottom: 5%;
 }
 .header {
-    /*padding-top: 120px;*/
-    /*background: url(../img/mad.jpg) no-repeat ;
-    background-size:cover;*/
-    /*background:#404e91;*/
-
-    /*height:500px;*/
     height:81px;
-
 }
-/*.header-logo {
-    margin-left: 22%;
-    width: 1080px;
-    height: 350px;
-    background: url(../img/btc.png) no-repeat;
-    background-size: 100% auto;
-}*/
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.65);
     -webkit-transition: all 0.6s ease-out;
@@ -38,16 +25,7 @@ body {
 .navbar.scrolled {
     background: rgba(0, 0, 0, 1); //NON-IE
 }
-/*#brand-name {
-    display: none;
-    position: absolute;
-    left: 50%;
-    margin-left: -84px;
-    color: white;
-}
-#brand-name:hover {
-    color: #49ad68;
-}*/
+
 .navbar .navbar-collapse {
     text-align: center;
 }
@@ -56,7 +34,7 @@ body {
 }
 .navbar li {
     text-align: center;
-    /*border-left: 1px solid #49ad68;*/
+
 }
 .navbar li:last-child {
     /*border-right: 1px solid #49ad68;*/
@@ -70,6 +48,26 @@ body {
 .visible-xs{
   margin-top:15px;
 }
+
+.navbar-brand {
+  padding:0 0 0 0px;
+  height: 70px;
+}
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.example3 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.nav-container{
+  margin-right:-15px;
+}
 @media(max-width:1040px) {
     .header {
         height: 50px;
@@ -82,6 +80,7 @@ body {
         padding-right: 0;
     }
 }
+
 @media(max-width:767px) {
     .header {
         height: 56px;
@@ -100,6 +99,11 @@ body {
     }
     #navbar .nav-item:last-child {
         border-bottom: 0px;
+    }
+    .nav >li >a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
     }
 }
 @media(max-width:400px) {
@@ -167,29 +171,6 @@ body {
 .footer {
     background: #4b5fa3;
     height: 215px;
-}
-
-.navbar-brand {
-  padding:0 0 0 0px;
-  height: 70px;
-}
-
-.nav >li >a {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-}
-/*.nav >li{
-  padding-top:10px;
-
-}*/
-.example3 .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
-}
-
-.nav-container{
-  margin-right:-15px;
 }
 
 .box {
