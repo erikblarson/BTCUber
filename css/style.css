@@ -15,7 +15,7 @@ body {
     /*background: url(../img/mad.jpg) no-repeat ;
     background-size:cover;*/
     /*background:#404e91;*/
-    border-bottom:1px solid black;
+
     /*height:500px;*/
     height:81px;
 
@@ -66,6 +66,9 @@ body {
 }
 .nav-item:hover {
     background-color: black;
+}
+.visible-xs{
+  margin-top:15px;
 }
 @media(max-width:1040px) {
     .header {
