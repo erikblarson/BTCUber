@@ -65,13 +65,13 @@ Main Components
   }
 }
 
-.cd-primary-nav {
+.cd-primary-nav {*/
   /* mobile first - navigation hidden by default, triggered by tap/click on navigation icon */
   float: right;
   margin-right: 5%;
   width: 44px;
   height: 100%;
-  background: url("../assets/cd-icon-menu.svg") no-repeat center center;
+  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
 }
 .cd-primary-nav ul {
   position: absolute;
