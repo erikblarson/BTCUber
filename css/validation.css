@@ -1,0 +1,21 @@
+.error{
+    display:none; 
+    color:red;
+    font-size:12px;
+}
+
+input:focus + .error {
+  display: block;
+}
+
+input:focus:required:valid + .error {
+  display: none;
+
+}
+
+input:focus:required:valid {
+    background-image: url(../img/checkmark.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+

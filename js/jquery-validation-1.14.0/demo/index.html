@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact JQUERY</title>
+	<link rel="stylesheet" href="css/screen.css">
+	<script src="../lib/jquery.js"></script>
+	<script src="../dist/jquery.validate.js"></script>
+	<script>
+	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#commentForm").validate();
+
+		// validate signup form on keyup and submit
+		$("#signupForm").validate({
+			rules: {
+				btcNumber:{required: true},
+				firstname: {required: true},
+				lastname: {required: true},
+				address: {
+					required: true,
+					
+				},
+				city: {
+					required: true,
+					
+				},
+				state: {
+					required: true,
+					
+				},
+				zip: {
+					required: true,
+					
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				phoneNumber: {
+					required: true,
+					
+				},
+				campus: {
+					required: true,
+					
+				},
+			},	
+			messages: {
+				btcNumber: "Please enter your BTC ID",
+				firstname: "Please enter your firstname",
+				lastname: "Please enter your lastname",
+				address:  "Please enter your address",
+				city: "Please enter your city",
+				state: "Please select your state",
+				zip: "Please enter your zip",	
+				email: "Please enter a valid email address",
+				phoneNumber: "Please enter your phone number",
+				campus: "Please choose a location"
+			}
+		});
+
+	});
+	</script>
+	<style>
+	#commentForm {
+		width: 500px;
+	}
+	#commentForm label {
+		width: 250px;
+	}
+	#commentForm label.error, #commentForm input.submit {
+		margin-left: 253px;
+	}
+	#signupForm {
+		width: 670px;
+	}
+	#signupForm label.error {
+		margin-left: 10px;
+		width: auto;
+		display: inline;
+	}
+	#newsletter_topics label.error {
+		display: none;
+		margin-left: 103px;
+	}
+	</style>
+</head>
+<body>
+
+<div class="brand">Blackhawk Technical College Uber</div>
+    <div class="address-bar">6004 S County Road G | Janesville, WI 53546  | 608-758-6900</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contacthtml.html">Contact HTML</a>
+                    </li>
+                    <li>
+                        <a href="contactjs.html.html">Contact JS</a>
+                    </li>
+                    <li>
+                        <a href="contactjquery.html">Contact JQUERY</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div id="main">
+	<p>Default submitHandler is set to display an alert into of submitting the form</p>
+	
+	<form class="cmxform" id="signupForm" method="post" action="confirmation.php">
+		<fieldset>
+			<legend>Validating a complete form</legend>
+			<p>
+				<label for="btcNumber">BTC ID</label>
+				<input id="btcNumber" name="btcNumber" type="text">
+			</p>
+			<p>
+				<label for="firstname">Firstname</label>
+				<input id="firstname" name="firstname" type="text">
+			</p>
+			<p>
+				<label for="lastname">Lastname</label>
+				<input id="lastname" name="lastname" type="text">
+			</p>
+			<p>
+				<label for="address">address</label>
+				<input id="address" name="address" type="text">
+			</p>
+			<p>
+				<label for="city">city</label>
+				<input id="city" name="city" type="text">
+			</p>
+			<p>
+				<label for="state">State</label>
+				<input id="state" name="state" type="text">
+			</p>
+			<p>
+				<label for="zip">zip</label>
+				<input id="zip" name="zip" type="text">
+			</p>
+			<p>
+				<label for="email">BTC Email</label>
+				<input id="email" name="email" type="email">
+			</p>
+			<p>
+				<label for="phoneNumber">Phone Number</label>
+				<input id="phoneNumber" name="phoneNumber" type="email">
+			</p>
+			
+			<fieldset id="campus">
+				<legend>Please select a location.</legend>
+				<label for="topic_marketflash">
+					<input type="checkbox" id="topic_marketflash" value="janesville" name="campus">Janesville
+				</label>
+				<label for="topic_fuzz">
+					<input type="checkbox" id="topic_fuzz" value="monroe" name="campus">Monroe
+				</label>
+				<label for="topic_digester">
+					<input type="checkbox" id="topic_digester" value="beloit" name="campus">The Beloit Center
+				</label>
+				<label for="topic_digester">
+					<input type="checkbox" id="topic_digester" value="transportation" name="campus">The Center for Transportation Studies
+				</label>
+				<label for="topic" class="error">Please select 1 location.</label>
+			</fieldset>
+			<p>
+				<input class="submit" type="submit" value="Submit">
+			</p>
+		</fieldset>
+	</form>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#lbWrapper{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    display:none;
+   
+}
+
+#lightbox{
+    position: absolute;
+    top: 20%;
+    width: 425px;
+    height: 160px;
+    left: 50%;
+    margin-left: -225px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: white;
+    display:none;
+}
+
+#close{
+    float: right;
+    margin-right: 6px;
+    cursor: pointer;
+    color: black;
+}
+
+#lbImage{
+    
+    margin-left: 7px;
+    margin-top: 1px;
+}
+
+#lbText{
+    text-align:center;
+    color:black;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    #lightbox{
+        width: 155px;
+        height: 420px;
+        margin-left: -77px;
+    }
+    
+    #lbIamge{
+        margin-left: 2px;
+    }
+}
