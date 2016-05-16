@@ -5,202 +5,159 @@
   <title>Blackjack Strategy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale= 1">
-  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- CSS reset -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style2.css">
   <!-- <link rel="stylesheet" href="css/style-nav.css"> -->
+
+  <!-- Scroll To Top of Page CSS -->
+  <link href="css/scrollToTop.css" rel="stylesheet">
+
+  <!-- Lightbox CSS -->
+  <link href="css/lightbox.css" rel="stylesheet">
+
+  <!-- Bottom Slider -->
+  <link href="css/imageSlider.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <a href="javascript:" id="scrollToTop"><i class="fa fa-chevron-up"></i></a>
+  <header class="conatiner-fluid">
     <div class="navbar-wrapper">
       <div class="header">
         <!-- <div class="header-logo"></div> -->
-        <section class="cd-hero">
-          <ul class="cd-hero-slider autoplay">
-            <li class="selected">
-              <div class="cd-full-width">
-                <h2>Hero slider</h2>
-                <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
-                <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
-              </div> <!-- .cd-full-width -->
-            </li>
-
-            <li>
-              <div class="cd-half-width">
-                <h2>Slide title here</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-                <a href="#0" class="cd-btn">Start</a>
-                <a href="#0" class="cd-btn secondary">Learn More</a>
-              </div> <!-- .cd-half-width -->
-
-              <div class="cd-half-width cd-img-container">
-                <img src="assets/slide-1.jpg" alt="tech 1">
-              </div> <!-- .cd-half-width.cd-img-container -->
-            </li>
-
-            <li>
-              <div class="cd-half-width cd-img-container">
-                <img src="assets/slide-3.jpg" alt="tech 2">
-              </div> <!-- .cd-half-width.cd-img-container -->
-
-              <div class="cd-half-width">
-                <h2>Slide title here</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-                <a href="#0" class="cd-btn">Start</a>
-                <a href="#0" class="cd-btn secondary">Learn More</a>
-              </div> <!-- .cd-half-width -->
-
-            </li>
-
-            <li class="cd-bg-video">
-              <div class="cd-full-width">
-                <h2>Slide title here</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
-                <a href="#0" class="cd-btn">Learn more</a>
-              </div> <!-- .cd-full-width -->
-
-              <div class="cd-bg-video-wrapper" data-video="assets/video/video">
-                <!-- video element will be loaded using jQuery -->
-              </div> <!-- .cd-bg-video-wrapper -->
-            </li>
-
-            <!-- <li>
-              <div class="cd-full-width">
-                <h2>Slide title here</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
-                <a href="#0" class="cd-btn">Start</a>
-                <a href="#0" class="cd-btn secondary">Learn More</a>
-              </div>  .cd-full-width
-            </li> -->
-
-          <div class="cd-slider-nav">
-            <ul class="cd-slider-navigation">
-              <li><a href="#0" class="cd-prev inactive">Next</a></li>
-              <li><a href="#0" class="cd-next">Prev</a></li>
-            </ul> <!-- cd-slider-navigation -->
-          </ul> <!-- .cd-hero-slider -->
-            <!-- <nav>
-              <span class="cd-marker item-1"></span>
-
-              <ul>
-                <li class="selected"><a href="#0">Intro</a></li>
-                <li><a href="#0">Tech 1</a></li>
-                <li><a href="#0">Tech 2</a></li>
-                <li><a href="#0">Video</a></li>
-                <li><a href="#0">Image</a></li>
-              </ul>
-            </nav> -->
-          </div> <!-- .cd-slider-nav -->
-        </section> <!-- .cd-hero -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="brand-name" class="navbar-brand visible-xs" href="#"><img src="img/logoxs.png" alt="Dispute Bills" class="img-responsive"></a>
-            <a id="brand-name" class="navbar-brand visible-sm" href="#"><img src="img/logomd.png" alt="Dispute Bills" class="img-responsive"></a>
-            <a id="brand-name" class="navbar-brand visible-md" href="#"><img src="img/logomd.png" alt="Dispute Bills" class="img-responsive"></a>
-            <a id="brand-name" class="navbar-brand visible-lg" href="#"><img src="img/logobtc3.png" alt="Dispute Bills" class="img-responsive"></a>
-          </div>
-              <div id="nav-container" class="container">
-                <div id="navbar" class="navbar-collapse collapse navbar-right">
-                  <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item "><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
-                    <li class="nav-item"><a href="#">Ride Times</a></li>
-                    <li class="nav-item"><a href="#">Survey</a></li>
-                  </ul>
-                </div>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a id="brand-name" class="navbar-brand visible-xs" href="#"><img src="img/logoxs.png" alt="Dispute Bills" class="img-responsive"></a>
+              <a id="brand-name" class="navbar-brand visible-sm" href="#"><img src="img/logomd.png" alt="Dispute Bills" class="img-responsive"></a>
+              <a id="brand-name" class="navbar-brand visible-md" href="#"><img src="img/logomd.png" alt="Dispute Bills" class="img-responsive"></a>
+              <a id="brand-name" class="navbar-brand visible-lg" href="#"><img src="img/logobtc3.png" alt="Dispute Bills" class="img-responsive"></a>
+            </div>
+            <div id="nav-container" class="container">
+              <div id="navbar" class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item"><a href="#">Home</a></li>
+                  <li class="nav-item "><a href="#">About</a></li>
+                  <li class="nav-item"><a href="#">Contact</a></li>
+                  <li class="nav-item"><a href="#">Ride Times</a></li>
+                  <li class="nav-item"><a href="#">Survey</a></li>
+                </ul>
               </div>
+            </div>
           </div>
         </nav>
       </div>
     </div>
-</div>
-
-  </header>
-
-  <div class="container">
-    <div id="content-panel" class="row">
-      <div class="col-xs-12 col-md-5 col-lg-5 col-md-push-7 side text-center">
-        <div id="inner-side" data-spy="affix" data-offset-top="680" data-offset-bottom="230" data-clampedwidth=".side">
-          <div class="offer">
-            <h2>OFFERS</h2>
-            <h3>test</h3>
-            <button type="submit" title="Sign Up">Sign Up</button>
+    <div class="hero">
+      <div class="intro">
+        <div class="row">
+          <div id="top" class=" col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 ">
+            <h1>Truth? What truth?</h1>
+            <p>Don't you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!</p>
+            <button type="submit">Find A ride Now</button>
           </div>
-          <div class="offer">
-            <h2>OFFERS</h2>
-            <h3>test</h3>
-            <button type="submit" title="Sign Up">Sign Up</button>
-          </div>
-          <div class="offer">
-            <h2>OFFERS</h2>
-            <h3>test</h3>
-            <button type="submit" title="Sign Up">Sign Up</button>
-          </div>
-          <div class="offer">
-            <h2>OFFERS</h2>
-            <h3>test</h3>
-            <button type="submit" title="Sign Up">Sign Up</button>
+          <div class=" col-md-5 col-lg-5 ">
+            <div class="tech-img"></div>
           </div>
         </div>
       </div>
-      <div id="main" class="col-xs-12 col-md-7 col-lg-7 col-md-pull-5">
-        <h1>Hello World!</h1>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
+    </div>
+  </header>
+
+  <div id="content" class="container">
+    <div class="row">
+      <div class="box">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="intro-text text-center">Need to get to school?
+                        <strong>Let us help you!</strong>
+                    </h2>
+          <hr>
+          <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+          <hr class="visible-xs">
+          <p>What makes the Uber experience truly great are the people behind the wheel. They are mothers and fathers. Students and teachers. Veterans. Neighbors. Friends. Our partners drive their own cars—on their own schedule—in cities big and small. Which
+            is why more than one million people worldwide have signed up to drive.</p>
+          <p>Whether riding in the backseat or driving up front, every part of the BTC Uber experience has been designed around your safety and security.</p>
+
+        </div>
+        <div class="clearfix"></div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="box">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="intro-text text-center">BTC Uber
+                        <strong>Drivers Wanted</strong>
+                    </h2>
+          <hr>
+          <p>We are looking to add more dedicated drivers to our BTC Uber group. You will be responsible for picking people up and taking them to there desired BTC location.</p>
+          <p>If you are a motivated person with your own vehicle, have a valid drivers license, and have valid insurance we may have a job for you. Please contact us at 608-758-6900.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="row" id="slide-images">
+      <div class="box">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="intro-text text-center">BTC Uber
+                        <strong>Our Rides</strong>
+                    </h2>
+          <hr>
+          <div id="viewer" class="col-lg-8 col-lg-offset-2">
+            <div id="left" class="slides"><a href="javascript:"><i class="fa fa-chevron-left"></i></a></div>
+            <div id="selector" class="slides col-lg-12">
+              <div id="imageSlide" class=""></div>
+            </div>
+            <div id="right" class="slides"><a href="javascript:"><i class="fa fa-chevron-right"></i></a></div>
+            <br>
+            <div id="photo" class="slides"><img src="" /></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
   </div>
+  <!-- /.container -->
   <footer class="footer">
 
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/functions.js"></script>
-  <script src="js/modernizr.js"></script> <!-- Modernizr -->
-  <script src="js/main.js"></script>
+  <script src="js/jquery-2.1.1.js" <script src="js/functions.js"></script>
+
+  <!-- Animation -->
+  <script src="js/animation.js"></script>
+
+  <!-- Scroll To Top -->
+  <script src="js/scrollToTop.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Lightbox -->
+  <script src="js/lightbox.js"></script>
+
+  <!-- Bottom Gallery -->
+  <script src="js/image_slider.js"></script>
+
+  <!-- Script to Activate the Carousel -->
+  <script src="js/indexCarousel.js"></script>
 </body>
 
 </html>
